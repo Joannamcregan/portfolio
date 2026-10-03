@@ -8,7 +8,7 @@ export const Header = () => {
         <ModeToggle />
         <div className="flex">
             <Link to="/about">about</Link>
-            <Link to="/">home</Link>
+            <Link to="/">work</Link>
             <Link to="/contact">contact</Link>
         </div>
         <div className="gentle-divide"></div>
