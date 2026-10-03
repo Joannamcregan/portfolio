@@ -1,17 +1,19 @@
 :root {
-  --background: rgb(230, 229, 244);
+  --background: rgb(240, 237, 255);
+  --filler-background: rgb(195, 201, 226);
   --text: #1a1a1a;
   --accent: rgb(42, 42, 84);
 }
 [data-theme="dark"] {
   --background: rgb(42, 42, 84);
+  --filler-background: rgb(27, 31, 45);
   --text: #f5f5f5;
   --accent: rgb(230, 229, 244);
 }
 div.gentle-divide{
-  background-image: radial-gradient(rgb(201, 199, 244) 10%, transparent 50%);
+  background-image: radial-gradient(rgb(201, 199, 244) 10%, transparent 70%);
   width: 100%;
-  height: 20px;
+  height: 10px;
   opacity: 0.7;
   margin: 10px;
 }
@@ -34,17 +36,33 @@ div.gentle-divide{
   flex-shrink: 0;
 }
 .buffer-left{
-  flex-grow: 1;
-  border: solid red 2px;
+  flex-grow: 3;
+  background-image: linear-gradient(to left, var(--background), var(--filler-background));
 }
 .buffer-right{
-  flex-grow: 2;
-  border: solid pink 2px;
+  flex-grow: 1;
+  background-image: linear-gradient(to right, var(--background), var(--filler-background));
+}
+.height-100{
+  height: 100vh;
+}
+.gentle-pulse{
+  animation: gentle-pulse 4s infinite;
+}
+@keyframes gentle-pulse {
+  0%, 30%, 70%, 100%{
+    scale: 1;
+    filter: drop-shadow(0px 0px 1px var(--accent));
+  }
+  50%{
+    scale: 1.05;
+    filter: drop-shadow(0px 0px 2px var(--accent));
+  }
 }
 body {
   background-color: var(--background);
   color: var(--text);
-  transition: background-color 0.3s ease, color 0.5s ease;
+  transition: color 0.5s ease;
 }
 header{
   width: 850px;
@@ -53,6 +71,9 @@ header{
   margin: auto;
   position: relative; */
 }
+button{
+  cursor: pointer;
+}
 button.modeButton{
   color: var(--accent);
   border: rgba(244, 244, 244, 0);
@@ -60,6 +81,6 @@ button.modeButton{
   background: radial-gradient(rgba(201, 199, 244, 0.3) 20%, rgba(201, 199, 244, 0.05) 50%);
   position: absolute;
   top: 15px;
-  right: 5px;
+  right: 10px;
   z-index: 999;
 }
