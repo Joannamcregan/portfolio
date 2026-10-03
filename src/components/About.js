@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <>
       <Page title="About Joanna">
-        <h1>Joanna is a Person.</h1>
+        <h1 className="centered-text">Joanna is a Person.</h1>
         <p>
           Certain signs indicate that an abuser is more likely to commit murder.
           Abusers who don't show these signs could still kill you (or your kids,
