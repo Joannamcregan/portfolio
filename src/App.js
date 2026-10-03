@@ -1,14 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { ModeToggle } from './components/ModeToggle';
 
 function App() {
   return (
-    <>
-      <h1 onClick={()=>console.log('that girl')}>Joanna Makes Sites</h1>
-      <p>About</p>
-      <p>Work</p>
-      <p>Contact</p>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <ModeToggle />
+        <div class="flex">
+          <div class="buffer-left"></div>
+          <div className="flex width-500 pt-40 margin-x-auto shrink-0">
+            <span>about</span>
+            <span>work</span>
+            <span>contact</span>
+          </div>
+          <div class="buffer-right"></div>
+        </div>
+        <div className="gentle-divide"></div>
+      </header>
+    </div>
   );
 }
 
