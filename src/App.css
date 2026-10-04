@@ -74,9 +74,16 @@ body {
 header{
   width: 850px;
   max-width: 95%;
-  /* display: block;
-  margin: auto;
-  position: relative; */
+}
+main{
+  min-height: 100vh;
+  padding-top: 20px;
+}
+footer{
+  width: 850px;
+  max-width: 95%;
+  padding: 40px 0px 40px 0px;
+  text-align: center;
 }
 button{
   cursor: pointer;

@@ -1,5 +1,6 @@
 import './App.css';
 import { Header } from './components/Header';
+import {Footer} from './components/Footer';
 import {Home} from './components/Home';
 import {About} from './components/About';
 import {Contact} from './components/Contact';
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <div className="flex height-100">
         <div className="buffer-left"></div>
-        <div className="width-500 pt-50 pb-50 shrink-0">
+        <div className="width-500 pt-50 shrink-0">
           <BrowserRouter>
             <Header />
             <Routes>
@@ -18,6 +19,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
           </BrowserRouter>
         </div>
         <div className="buffer-right"></div>
