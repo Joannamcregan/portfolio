@@ -23,21 +23,10 @@ div.gentle-divide{
 .flex{
   display: flex;
 }
-.width-500{
+#content-section{
   width: 500px;
   max-width: 85%;
-}
-.pt-50{
   padding-top: 50px;
-}
-.pb-50{
-  padding-bottom: 50px;
-}
-.margin-x-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-.flex-shrink-0{
   flex-shrink: 0;
 }
 .buffer-left{
@@ -77,6 +66,11 @@ header{
 nav{  
   justify-content: space-around;
   width: 100%;
+}
+@media screen and (max-width: 550px) {
+  nav{
+    padding-top: 20px;
+  }
 }
 main{
   min-height: 100vh;

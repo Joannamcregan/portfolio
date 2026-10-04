@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <div className="flex height-100">
         <div className="buffer-left"></div>
-        <div className="width-500 pt-50 shrink-0">
+        <div id="content-section">
           <BrowserRouter>
             <Header />
             <Routes>
