@@ -6,11 +6,11 @@ export const Header = () => {
   return (
     <header className="App-header">
         <ModeToggle />
-        <div className="flex">
+        <nav className="flex">
             <Link to="/about">about</Link>
             <Link to="/">work</Link>
             <Link to="/contact">contact</Link>
-        </div>
+        </nav>
         <div className="gentle-divide"></div>
     </header>
     );
