@@ -99,3 +99,36 @@ button.modeButton{
 a, a:visited{
   color: var(--accent);
 }
+.project-section{
+  border: solid red 2px;
+}
+.screen-group{
+  border: solid orange 2px;
+  position: relative;
+}
+.project-section div.fullscreen, .project-section div.smallscreen{
+  height: fit-content;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 20px;
+  background-image: linear-gradient(135deg, #222 35%, #444 40%, #222 45%)
+}
+.project-section div.fullscreen img{
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  border: solid black 2px;
+}
+.project-section div.smallscreen img{
+  width: 160px;
+  border-radius: 20px;
+  border: solid black 2px;
+}
+@media screen and (max-width: 550px) {
+  .project-section div.fullscreen img{
+  width: 300px;
+}
+.project-section div.smallscreen img{
+  width: 120px;
+}
+}
