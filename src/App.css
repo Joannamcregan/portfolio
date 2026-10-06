@@ -119,6 +119,15 @@ a, a:visited{
   border-radius: 20px;
   background-image: linear-gradient(120deg, #222 35%, #444 40%, #222 45%);
   box-shadow: -3px 3px 5px black;
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .project-section div.fullscreen img{
   width: 400px;
