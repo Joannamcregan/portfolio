@@ -1,12 +1,12 @@
 :root {
   --background: rgb(240, 237, 255);
-  --filler-background: rgb(195, 201, 226);
+  --filler-background: rgb(188, 196, 208);
   --text: #1a1a1a;
   --accent: rgb(42, 42, 84);
 }
 [data-theme="dark"] {
   --background: rgb(42, 42, 84);
-  --filler-background: rgb(27, 31, 45);
+  --filler-background: rgb(22, 29, 39);
   --text: #f5f5f5;
   --accent: rgb(230, 229, 244);
 }
@@ -101,7 +101,7 @@ a, a:visited{
 }
 .project-section{
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 120px;
 }
 .project-section a{
   width: 100%;
