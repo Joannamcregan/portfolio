@@ -101,17 +101,25 @@ a, a:visited{
 }
 .project-section{
   border: solid red 2px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.project-section a{
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 .screen-group{
-  border: solid orange 2px;
   position: relative;
+  height: 320px;
 }
 .project-section div.fullscreen, .project-section div.smallscreen{
   height: fit-content;
   width: fit-content;
   padding: 5px;
   border-radius: 20px;
-  background-image: linear-gradient(135deg, #222 35%, #444 40%, #222 45%)
+  background-image: linear-gradient(120deg, #222 35%, #444 40%, #222 45%);
+  box-shadow: -3px 3px 5px black;
 }
 .project-section div.fullscreen img{
   width: 400px;
@@ -119,16 +127,50 @@ a, a:visited{
   border-radius: 20px;
   border: solid black 2px;
 }
+.project-section div.smallscreen{
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+  transform: rotate(7deg);
+}
 .project-section div.smallscreen img{
   width: 160px;
   border-radius: 20px;
   border: solid black 2px;
 }
 @media screen and (max-width: 550px) {
-  .project-section div.fullscreen img{
-  width: 300px;
+  .screen-group{
+    position: relative;
+    height: 275px;
+  }
+    .project-section div.fullscreen img{
+    width: 300px;
+  }
+  .project-section div.smallscreen img{
+    width: 120px;
+  }
 }
-.project-section div.smallscreen img{
-  width: 120px;
+@media screen and (max-width: 450px) {
+  .screen-group{
+    position: relative;
+    height: 225px;
+  }
+    .project-section div.fullscreen img{
+    width: 250px;
+  }
+  .project-section div.smallscreen img{
+    width: 100px;
+  }
 }
+@media screen and (max-width: 400px) {
+  .screen-group{
+    position: relative;
+    height: 200px;
+  }
+    .project-section div.fullscreen img{
+    width: 200px;
+  }
+  .project-section div.smallscreen img{
+    width: 80px;
+  }
 }

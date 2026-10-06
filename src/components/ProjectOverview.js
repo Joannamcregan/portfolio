@@ -12,5 +12,6 @@ export const ProjectOverview = (props) => {
         </div>
         <h1>{props.projectTitle}</h1>
         <p>{props.projectDescription}</p>
+        <p><a target="_blank" rel="noreferrer" href={props.link_destination}>{props.link_text}</a></p>
     </div>;
 }
