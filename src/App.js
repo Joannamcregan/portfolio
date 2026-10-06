@@ -4,7 +4,7 @@ import {Footer} from './components/Footer';
 import {Home} from './components/Home';
 import {About} from './components/About';
 import {Contact} from './components/Contact';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <div className="flex height-100">
         <div className="buffer-left"></div>
         <div id="content-section">
-          <BrowserRouter>
+          <HashRouter >
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
@@ -20,7 +20,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
-          </BrowserRouter>
+          </HashRouter>
         </div>
         <div className="buffer-right"></div>
       </div>
