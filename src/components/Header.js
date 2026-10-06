@@ -7,9 +7,9 @@ export const Header = () => {
     <header className="App-header">
         <ModeToggle />
         <nav className="flex">
-            <Link to="/about">about</Link>
-            <Link to="/">work</Link>
-            <Link to="/contact">contact</Link>
+            <Link to="/about" className={({ isActive }) => isActive ? 'active-link' : ''}>about</Link>
+            <Link to="/" className={({ isActive }) => isActive ? 'active-link' : ''}>work</Link>
+            <Link to="/contact" className={({ isActive }) => isActive ? 'active-link' : ''}>contact</Link>
         </nav>
         <div className="gentle-divide"></div>
     </header>

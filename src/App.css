@@ -100,7 +100,6 @@ a, a:visited{
   color: var(--accent);
 }
 .project-section{
-  border: solid red 2px;
   padding-top: 30px;
   padding-bottom: 60px;
 }
